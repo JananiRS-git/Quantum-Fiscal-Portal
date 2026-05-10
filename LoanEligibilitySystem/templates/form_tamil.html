@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>கடன் விண்ணப்பம் (தமிழ்)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            margin-top: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>கடன் விண்ணப்பப் படிவம் (தமிழ்)</h2>
+        <form method="post">
+            <label>பெயர்:</label> <input type="text" name="name" required>
+            <label>ஆதார்:</label> <input type="text" name="aadhar" required>
+            <label>மொபைல்:</label> <input type="text" name="mobile" required>
+            <label>முகவரி:</label> <input type="text" name="address" required>
+
+            <label>கல்வி:</label>
+            <select name="education">
+                <option value="Graduate">பட்டதாரி</option>
+                <option value="Not Graduate">பட்டதாரி அல்ல</option>
+            </select>
+
+            <label>விண்ணப்பதாரரின் வருமானம்:</label> <input type="number" name="applicant_income" required>
+            
+            <label>சொத்து சொந்தம்:</label>
+            <select name="property_owned">
+                <option value="Urban">நகர்ப்புறம்</option>
+                <option value="Rural">கிராமம்</option>
+                <option value="Semi-Urban">அரைகிராமம்</option>
+            </select>
+
+            <label>கடன் தொகை:</label> <input type="number" name="loan_amount" required>
+            <label>கடன் காலம் (மாதங்களில்):</label> <input type="number" name="loan_term" required>
+
+            <label>ஏற்கனவே கடன் இருக்கிறதா?</label>
+            <select name="existing_loan_status">
+                <option value="Yes">ஆம்</option>
+                <option value="No">இல்லை</option>
+            </select>
+
+            <button type="submit">சமர்ப்பிக்க</button>
+        </form>
+    </div>
+</body>
+</html>

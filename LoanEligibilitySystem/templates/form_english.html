@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application (English)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: #ffffff;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            margin-top: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Loan Application Form (English)</h2>
+        <form method="post">
+            <label>Name:</label> <input type="text" name="name" required>
+            <label>Aadhar:</label> <input type="text" name="aadhar" required>
+            <label>Mobile:</label> <input type="text" name="mobile" required>
+            <label>Address:</label> <input type="text" name="address" required>
+
+            <label>Education:</label>
+            <select name="education">
+                <option value="Graduate">Graduate</option>
+                <option value="Not Graduate">Not Graduate</option>
+            </select>
+
+            <label>Applicant Income:</label> <input type="number" name="applicant_income" required>
+            
+            <label>Property Owned:</label>
+            <select name="property_owned">
+                <option value="Urban">Urban</option>
+                <option value="Rural">Rural</option>
+                <option value="Semi-Urban">Semi-Urban</option>
+            </select>
+
+            <label>Loan Amount:</label> <input type="number" name="loan_amount" required>
+            <label>Loan Term (Months):</label> <input type="number" name="loan_term" required>
+
+            <label>Existing Loan Status:</label>
+            <select name="existing_loan_status">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

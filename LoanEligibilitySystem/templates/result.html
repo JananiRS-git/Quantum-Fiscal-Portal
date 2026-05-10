@@ -1,0 +1,13 @@
+<h2>Loan Application Result</h2>
+
+{% if credit_score %}
+    <p>Credit Score: {{ credit_score }}</p>
+{% endif %}
+
+{% if verified_income %}
+    <p>Verified Income: ₹{{ verified_income }}</p>
+{% endif %}
+
+{% if fraud_alerts %}
+    <p>Fraud Alert: {{ fraud_alerts }}</p>
+{% endif %}
